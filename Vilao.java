@@ -30,9 +30,13 @@ D6 = R.nextInt(7);
     else if(D6 == 6){
       dano = 10;
       HP_H(D6);
+    } else {
+      golpes();
     }
     V = (R.nextInt(4));
-    if (V == 1) {
+          if(V == 0){
+    golpes();
+    }else if (V == 1) {
       System.out.println("==========================");
       System.out.println(" <SPLIT KICK> UTILIZADO! ");
       System.out.println("==========================");
@@ -44,8 +48,6 @@ D6 = R.nextInt(7);
       System.out.println("==========================");
       System.out.println(" <SHOCKWAVE> UTILIZADO! ");
       System.out.println("==========================");
-    }else if(V>3){
-      golpes();
     }
   }    
 }

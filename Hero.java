@@ -31,6 +31,8 @@ public int y;
               System.out.println("=================");
               dano = 40;
               Villain(dados);
+            } else {
+              jogando();
             }
           }
         }
@@ -57,7 +59,7 @@ public int y;
         Muque m = new Muque();
       for(int y = 0; y<6;y++){
         m.a();
-        m.Individualidade();
+        Individualidade();
         v.golpes();
       }
     } 
@@ -69,7 +71,7 @@ public int y;
         Raio raio = new Raio();
       for(int y = 0; y<6;y++){
       raio.a();
-      raio.Individualidade();
+      Individualidade();
       v.golpes();
       
       }
@@ -81,7 +83,7 @@ public int y;
         R r = new R();
       for(int y = 0; y<6;y++){
       r.a();
-      r.Individualidade();
+      Individualidade();
       v.golpes();
       }
     } else {
